@@ -2,11 +2,10 @@
 <html style="background-image:url(启动.jpg);background-size:100% 100%;width:100%;height:100%;background-repeat:no-repeat;background-color:black">
 <head>
   <meta charset="UTF-8">
-    <title>产品</title>
+    <title>关于</title>
   <style>
       .na{
         color:black;
-
         font-size:40px;
         margin:5% auto;
         margin:160px;
@@ -111,12 +110,13 @@ font-family:YouYuan;
     border-radius:20px;
     position:fixed;
     top:165px;
-    left:50px;
+    left:100px;
 
 }
 #logoImg{
     width:300px;
     height:500px;
+
 	   position:absolute;/* 设置绝对定位 */
 	   left:0;
 	   right:0;
@@ -133,9 +133,9 @@ font-family:YouYuan;
 
   <div  style="background-color:rgba(255,255,255,0.5);border-radius:20px">
 <!--    <img src=""/>-->
-    <a style="font-family:Microsoft YaHei;font-size:40px;">飞云</a>
+    <a style="font-family:Microsoft YaHei;font-size:40px;color:white">飞腾小组</a>
 
-    <a class="na" href="主页.html">首页</a>
+    <a class="na" href="index.html">首页</a>
 
     <a class="na" href="产品.html">产品</a>
 
@@ -144,29 +144,19 @@ font-family:YouYuan;
     </div>
 <!--  <div style="background-color:black;align=right;width:100px;height:100px;position:200px;"></div>-->
     <div style="position: fixed;top:15%;left:40%;border-radius:20px;">
-            <div class="text2"><div  style="position: relative;top:0px;opacity: 0.5;" class="G" id="r">软件</div><div class="A"    style="opacity: 0.5;position: relative;top:-42px;left:100px" id="y">硬件</div></div>
+            <div class="text2"><div  style="position: relative;top:0px;opacity: 0.5;" class="G" id="r">软件</div><br><div class="A"    style="opacity: 0.5;position: relative;top:-42px;left:100px" id="y">硬件</div></div>
 </div>
     <div class="logo">
-        <img src="启动1.jpg" id="logoImg"/>
-
+        <img src="../logo1.jpg" id="logoImg"/>
     </div>
 <div class="middle">
 
     <div style="overflow: auto;height:550px;width:400px" id="11">
             <div class="text1"></div>
-    <div class="text1">
+    <div class="text1">产品2
         <div class="left2">
-                    <div  class="tin" >Flying</div>
-            <!-- 简介-->
-            <p>hello!</p>
-            <!--宣传片-->
-            <video ></video>
-            <!--版本公告-->
-            <p>
-                v1.0:
-                <br>
+                    <div  class="tin" >飞腾上网助手</div>
 
-            </p>
         </div>
         <div>
         </div>
@@ -177,12 +167,7 @@ font-family:YouYuan;
 </div>
 <script>
     //我真是太弱了，一小段js写了半小时
-    var lrs=new Array();
-        var lys=new Array();
-        lrs=["Flying"];
-        var video1=new Array();
-        var p22=new Array();
-        var p33=new Array();
+
     		var r=document.getElementById('r');
     		var y=document.getElementById('y');
     		var text3=document.getElementsByClassName("text1");
@@ -190,23 +175,11 @@ font-family:YouYuan;
 				y.onclick=function(){
 					y.className='G';
 					r.className='A';
-                    for(var i=0;i<text3.length;i++){
-                      text3[i].textContent=lrs[0];
-                       Tin[i].textContent=lrs[0];
-                 }
 				}
 				r.onclick=function(){
 					r.className='G';
 					y.className='A';
-                   for(var i=0;i<text3.length;i++){
-                       text3[i].textContent=lrs[0];
-                        Tin[i].textContent=lrs[0];
-                   }
 				}
-			var pw=document.getElementById('11');
-			setInterval(function(){
-				pw.scrollTop=pw.scrollTop+1;
-			},10)
 </script>
 
 </body>
