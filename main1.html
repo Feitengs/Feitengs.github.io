@@ -12,7 +12,21 @@
         font-family:STKaiti;
         opacity: 0.8;
         color:white;
-      }</style>
+      }
+              .container {
+            position: relative;
+            width: 1400px;
+            height: 1000px;
+        }
+
+        .particle {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            background-color: white;
+            pointer-events: none;
+        }
+</style>
 </head>
 <body>
 <div>
@@ -24,6 +38,23 @@
         <a href="贡献.html">贡献</a>
         <a href="feitengs.github.io">我们</a>
     </div>
-    <img src="商标.gif" style="position:absolute;left:300px;top:150px;width:1000px;height:600px;border-radius:30px;"/>
+    <p>h</p>
+<span src="商标.gif" style="position:absolute;left:300px;top:150px;width:1000px;height:600px;border-radius:30px;color:white;font-size:100px;">white and black</span>
+    <div class="container" >
+        
+        <div id="particles" ></div>
+            <script>
+        var particleContainer = document.getElementById("particles");
+        var numParticles = 1000;
+
+        for (var i = 0; i < numParticles; i++) {
+            var particle = document.createElement("div");
+            particle.className = "particle";
+            particle.style.left = Math.random() * 100 + "vw";
+            particle.style.top = Math.random() * 100 + "vh";
+            particle.style.animationDuration = Math.random() * 5 + 1 + "s";
+            particleContainer.appendChild(particle);
+        }
+    </script>
 </body>
 </html>
